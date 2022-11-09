@@ -8,5 +8,15 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    summary: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    health_score: {
+      type: DataTypes.FLOAT
+    },
+    steps: {
+      type: DataTypes.STRING
+    }
   });
 };
